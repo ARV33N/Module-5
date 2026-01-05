@@ -1,0 +1,38 @@
+Write a Python program to Get the name, age and location of a person and display using Multilevel inheritance.
+
+For example:
+
+Input	:
+Srinivas
+24
+chennai
+
+Result : 
+Srinivas 24 chennai
+
+INPUT CODE :
+
+# Base class
+class Person:
+    def get_name(self):
+        self.name = input()
+
+# Derived class (Level 2)
+class Age(Person):
+    def get_age(self):
+        self.age = int(input())
+
+# Derived class (Level 3)
+class Location(Age):
+    def get_location(self):
+        self.location = input()
+    
+    def display(self):
+        print(self.name, self.age, self.location)
+
+# Object creation
+obj = Location()
+obj.get_name()
+obj.get_age()
+obj.get_location()
+obj.display()
