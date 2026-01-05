@@ -1,0 +1,88 @@
+Write a Python program to Get the Doctor  and patient details & display it using Hierarchical inheritance.
+
+Note: create a parent (base) class name Details and two child (derived) classes named Doctor and Patient.
+
+For example:
+
+Input	: 
+1
+Raj
+Male
+AIMS
+Eye
+2
+Latha
+Female
+AIMS
+Ear
+
+Result :
+Doctor Object
+Id:  1
+Name:  Raj
+Gender:  Male
+Hospital:  AIMS
+Department:  Eye
+
+Patient Object
+Id:  2
+Name:  Latha
+Gender:  Female
+Hospital:  AIMS
+Department:  Ear
+
+INPUT CODE :
+
+class Details:
+    def common_details(self):
+        self.id=id1
+        self.name=name1
+        self.gen=gen1
+        
+class Doctor(Details):
+    def doc_details(self):
+        self.hosp=hosp1
+        self.dept=dept1
+        
+    def display(self):
+        print("Doctor Object")
+        print("Id: ",id1)
+        print("Name: ",name1)
+        print("Gender: ",gen1)
+        print("Hospital: ",hosp1)
+        print("Department: ",dept1)
+        
+class Patient(Details):
+    def pat_details(self):
+        self.hosp=hosp2
+        self.dept=dept2
+    
+    def display(self):
+        print("\nPatient Object")
+        print("Id: ",id2)
+        print("Name: ",name2)
+        print("Gender: ",gen2)
+        print("Hospital: ",hosp2)
+        print("Department: ",dept2)
+        
+id1=int(input())
+name1=input()
+gen1=input()
+hosp1=input()
+dept1=input()
+id2=int(input())
+name2=input()
+gen2=input()
+hosp2=input()
+dept2=input()
+
+d=Doctor()
+d.common_details()
+d.doc_details()
+
+p=Patient()
+p.common_details()
+p.pat_details()
+
+d.display()
+p.display()
