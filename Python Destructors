@@ -1,0 +1,18 @@
+Create a python program with destructor and print a message when an object of the class is created, after the program execution print a message that object is deleted
+
+For example:
+
+Result : Employee created.
+         Destructor called, Employee deleted.
+
+INPUT CODE:
+
+class Employee:
+    def __init__(self):
+        print("Employee created.")
+
+    def __del__(self):
+        print("Destructor called, Employee deleted.")
+
+
+e = Employee()
