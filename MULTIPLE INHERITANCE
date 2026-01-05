@@ -1,0 +1,30 @@
+Write a Python program to find The area of rectangle using Multiple inheritance
+
+For example:
+
+Input :
+2
+3
+
+Result : 
+The area of rectangle with length 2 units and breadth 3 units is 6 sq. units.
+
+INPUT CODE:
+
+class Length:
+    def get_length(self):
+        self.length = int(input())
+
+class Breadth:
+    def get_breadth(self):
+        self.breadth = int(input())
+
+class Rectangle(Length, Breadth):
+    def area(self):
+        result = self.length * self.breadth
+        print(f"The area of rectangle with length {self.length} units and breadth {self.breadth} units is {result} sq. units.")
+
+r = Rectangle()
+r.get_length()
+r.get_breadth()
+r.area()
