@@ -7,7 +7,7 @@ Result : This is non parametrized constructor
          Hello saveetha 
 
 
-CODE:
+INPUT CODE:
 
 class student:
     def __init__(self):
