@@ -1,0 +1,37 @@
+Write a Python program to Vehicle details and  display it without ratings using Hybrid inheritance.
+
+INPUT CODE :
+
+class Vehicle:
+    def get_vehicle(self):
+        self.model=input()
+        self.mileage=int(input())
+        self.price=int(input())
+    
+class Engine(Vehicle):
+    def get_engine(self):
+        self.tyres=int(input())
+        self.cc=int(input())
+        
+class Car(Engine):
+    def display(self):
+        print("Model :", self.model)
+        print("Price :",self.price)
+        print("Mileage :",self.mileage)
+        print("CC :",self.cc)
+        print("Tyres :",self.tyres)
+        
+        
+v1=Car()
+v1.get_vehicle()
+v1.get_engine()
+
+v2=Car()
+v2.get_vehicle()
+v2.get_engine()
+
+v1.display()
+v2.display()
+
+print("No Rating")
+print("No Rating")
